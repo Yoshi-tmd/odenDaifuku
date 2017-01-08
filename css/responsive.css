@@ -1,0 +1,31 @@
+/*=============================================*/
+/* responsive.css */
+/*=============================================*/
+
+/*---------------------------------------------*/
+/* スマホに適応 */
+/*---------------------------------------------*/
+@media screen and ( max-width: 479px ) {
+	main{
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	
+	aside{
+		float: none;
+		display: block;
+		width: 100%;
+	}
+
+	nav ul{}
+		/* clear hack */
+		nav ul{zoom:1;}
+		nav ul:after{content:".";clear:both;height:0;display:block;visibility:hidden;}
+	
+	nav li{
+		float:left;
+		width: auto;
+	}
+	aside article{visibility:hidden}
+}
