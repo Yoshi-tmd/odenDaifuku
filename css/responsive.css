@@ -8,7 +8,7 @@
 /*---------------------------------------------*/
 @media screen and ( max-width: 479px ) {
 	h1{
-		font-size:1em;
+		font-size:0.5em;
 	}
 	main{
 		float: none;
