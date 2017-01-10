@@ -12,6 +12,7 @@ a{
 	-webkit-transition: ease-in 0.2s;
 	-moz-transition: ease-in 0.2s;
 	transition: ease-in 0.2s;
+	color:#2e94b9;
 }
 a:hover{color:#fd5959;}
 
