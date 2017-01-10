@@ -106,7 +106,7 @@ main article time{
 	font-size: 0.8em;
 }
 main article p{
-	margin:0.3em 0;
+	line-height:1.4em;
 }
 /*---------------------------------------------*/
 /* footer */
