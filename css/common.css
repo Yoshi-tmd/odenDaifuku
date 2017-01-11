@@ -75,11 +75,11 @@ aside nav ul li{
 }
 aside nav ul li a{color: #fff;}
 aside article p {
-	margin:0 auto;
-	text-align: center;
+	margin:0;
+	text-align:right;
 }
 aside article p img{
-	width: 100%;
+	width: auto;
 }
 /* main */
 main{
