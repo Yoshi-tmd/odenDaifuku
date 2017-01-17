@@ -141,7 +141,7 @@ footer{
     z-index: 998;
     text-align: center;
     background: #ddeeff;
-    overflow-y:hidden; 
+    overflow-y:hidden;
 }
 footer small{
 	padding:0;
