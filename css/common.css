@@ -127,6 +127,15 @@ main article ul.listLike li:first-child{
 main article .strong01{
 	font-weight: bold;
 }
+main article .css3Property{
+	margin:4px 0 0;
+}
+main article .css3Property dt{
+	color:#8bc34a;
+}
+main article .css3Property dd{
+	text-indent: 1em;
+}
 /*---------------------------------------------*/
 /* footer */
 /*---------------------------------------------*/
