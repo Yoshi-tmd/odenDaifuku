@@ -28,6 +28,71 @@
 
 		<main>
 			<article>
+				<h2>BASICプログラムを勉強しよう</h2>
+				<time datetime="2017-01-19">2017.01.19</time>
+				<p>自由にIchigoJamを使えるようになりたい。<br />
+				ので、BASICプログラムをネットで漁って、勉強してみる。<br />
+				</p>
+				<dl>
+					<dt>&#x2610;<a href="http://qiita.com/openspc/items/3f0352a45db01014f08f" target="_blank">数字消しゲーム</a></dt>
+					<dd>カーソルを移動させて、足して10を目指す。<br />10になると0に戻るけど、11以上になると動けなくなる。</dd>
+					<dd class="program">10 CLS:CLP:CLV<br />
+					20 X=15:Y=10:B=0<br />
+					30 FOR I=1 TO 640:PRINT RND(4)+1;:NEXT<br />
+					40 C=SCR(X,Y)-48<br />
+					100 LOCATE X,Y<br />
+					110 B=B+1:IF B%40<20 THEN PRINT C; ELSE PRINT CHR$(1);<br />
+					120 K=INKEY()<br />
+					130 IF K=0 THEN GOTO 100<br />
+					140 E=X-(K=28)+(K=29)<br />
+					150 F=Y-(K=30)+(K=31)<br />
+					160 D=SCR(E,F)-48<br />
+					170 IF D<0 OR (D+C)>10 THEN GOTO 100<br />	
+					180 IF (D+C)=10 THEN C=0:D=0:LOCATE E,F:PRINT " ";<br />
+					190 C=C+D<br />
+					200 LOCATE X,Y:PRINT " ";<br />
+					210 X=E:Y=F<br />
+					220 GOTO 100</dd>
+				</dl>
+				<dl>
+					<dt>&#x2610;<a href="http://blog.livedoor.jp/unagi530/archives/13871265.html" target="_blank">PPAPな横スクロールゲーム</a></dt>
+					<dd>画面右からペン（ー）とアップル（Q）とパイナップル（イチゴマーク）が流れてくるので、PPAPの順番でキャッチする。</dd>
+					<dd  class="program">10 'PPAP<br />
+				20 CLS:CLV:CLP:CLT<br />
+				30 N=1:Y=11:P=#780:Q=P+5<br />
+				40 POKE P,251,45,255,81,45,251<br />
+				50 @LOOP<br />
+				60 LC 31,RND(21)+2<br />
+				70 ?CHR$(PEEK(P+RND(4)+1));<br />
+				80 FOR A=0 TO N-1<br />
+				90 LC A,Y:?CHR$(0);<br />
+				100 NEXT<br />
+				110 SCROLL LEFT<br />
+				120 IF S LC S-1,0:?CHR$(229)<br />
+				140 Y=Y+BTN(DOWN)*(Y<22)-BTN(UP)*(Y>2)<br />
+				150 LC 0,Y:?STR$(Q,N);<br />
+				160 @CHECK<br />
+				170 C=SCR(N,Y)<br />
+				180 IF C POKE Q+N,C:N=N+1:GOTO @CHECK<br />
+				190 WAIT 10:IF N<5 GOTO @LOOP<br >
+				200 N=1:D=0:LC 0,1<br />
+				210 FOR A=1 TO 4<br />
+				220 C=SCR(A,Y)<br />
+				230 BEEP<br />
+				240 IF C=PEEK(P+A) D=D+1<br />
+				250 IF C=45 ?"ﾍﾟﾝ ";:WAIT 14<br />
+				260 IF C=81 ?"ｱｯﾎﾟｰ ";:WAIT 26<br />
+				270 IF C=255 ?"ﾊﾟｲﾅｯﾎﾟｰ ";:WAIT 32<br />
+				280 NEXT<br />
+				290 IF D<4 ?:?"NOT ";:END<br />
+				300 LC N,Y:?CHR$(0,0,0,0);<br />
+				310 LC S,0:?CHR$(229)<br />
+				320 S=S+1<br />
+				330 IF S<32 GOTO @LOOP<br />
+				340 ?"ｸﾘｱﾀｲﾑ:";TICK()/60;"ﾋﾞｮｳ"</dd>
+				</dl>
+			</article><!-- article -->
+			<article>
 				<h2>CSS3プロパティのメモ</h2>
 				<time datetime="2017-01-17">2017.01.17</time>
 				<p>CSS3から使用できるようになったテクニック</p>
