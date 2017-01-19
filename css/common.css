@@ -112,6 +112,15 @@ main article p{
 	line-height:1.4em;
 	letter-spacing:0.1em;
 }
+main article dl{
+	margin:8px 0;
+}
+main article dt{
+	margin:4px 0;
+}
+main article dd{
+	line-height: 1.2em;
+}
 main article ul.listLike li{
 	color:#666;
 	padding:0.2em 0 0.2em 1em;
@@ -135,7 +144,11 @@ main article .css3Property dt{
 }
 main article .css3Property dd{
 	text-indent: 1em;
-	line-height: 1.2em;
+}
+main article dd.program {
+	font-family: 'Lucida Console';
+	font-size:0.8em;
+	margin:0.8em 0 0.8em 1em;
 }
 /*---------------------------------------------*/
 /* footer */
