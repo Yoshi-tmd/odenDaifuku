@@ -149,6 +149,8 @@ main article dd.program {
 	font-family: 'Lucida Console';
 	font-size:0.8em;
 	margin:0.8em 0 0.8em 1em;
+	padding:0.5em;
+	background:#eee;
 }
 /*---------------------------------------------*/
 /* footer */
