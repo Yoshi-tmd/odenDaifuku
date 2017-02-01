@@ -54,7 +54,7 @@ h1 {
 		#wraper{zoom:1;}
 		#wraper:after{content:".";clear:both;height:0;display:block;visibility:hidden;}
 
-/* aside */
+/*---------- aside ----------*/
 aside{
 	padding: 2em 1em;
 	float:left;
@@ -80,8 +80,10 @@ aside article p {
 }
 aside article p img{
 	width: auto;
+	border-radius: 100%;
 }
-/* main */
+
+/*---------- main ----------*/
 main{
 	margin: 0 0 6em;
 	float: right;
@@ -133,11 +135,14 @@ main article ul.listLike li:first-child{
 	padding:0;
 	font-size:1em;
 }
+
+/*---------- class="strong01" ----------*/
 main article .strong01{
 	font-weight: bold;
 }
+/*---------- class="css3Property" ----------*/
 main article .css3Property{
-	margin:6px 0 0;
+	margin:8px 0 0;
 }
 main article .css3Property dt{
 	color:#8bc34a;
@@ -145,6 +150,70 @@ main article .css3Property dt{
 main article .css3Property dd{
 	text-indent: 1em;
 }
+main article .colorList{
+	margin-left:1em;	
+}
+main article .colorList li:before{
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background: #f44;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	left: -6px;
+}
+
+/*---------- class="cssFont" ----------*/
+main article .cssFont{
+	font-family: 'Lucida Console';
+	color:#4433cc;
+	padding:0 0.5em;
+}
+main article .clearHack{margin-left:1em;}
+	/* clear hack */
+		main article .clearHack{zoom:1;}
+		main article .clearHack:after{content:".";clear:both;height:0;display:block;visibility:hidden;}
+
+/*---------- class="cssImg" ----------*/
+main article .cssImg{
+	text-align: center;
+	float:left;
+	width:150px;
+	margin:0.5em;
+}
+
+main article .cssImg .sepia{
+	-webkit-filter:sepia(60%);
+	filter:sepia(60%);
+}
+main article .cssImg .gray{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+main article .cssImg .blur{
+	-webkit-filter:blur(2px);
+	filter:blur(2px);
+}
+main article .cssImg .brightness{
+	-webkit-filter:brightness(1.5);
+	filter:brightness(1.5);
+}
+main article .cssImg .hue{
+	-webkit-filter:hue-rotate(90deg);
+	filter:hue-rotate(90deg);
+}
+
+/*---------- class="colorSame" ----------*/
+main article .colorSame{
+	color:#F68686;
+	border:1px solid;
+	width: 200px;
+	margin-left: 1em;
+}
+
+/*---------- class="program" ----------*/
 main article dd.program {
 	font-family: 'Lucida Console';
 	font-size:0.8em;
@@ -152,6 +221,22 @@ main article dd.program {
 	padding:0.5em;
 	background:#eee;
 }
+
+/*---------- input ----------*/
+main article input{
+	margin:0.3em 1em;
+}
+main article input[type="text"]{
+	width:100px;
+	padding: 5px;
+}
+main article .expand-box{
+	transition: width .3s;
+}
+main article .expand-box:focus{
+	width: 200px;
+}
+
 /*---------------------------------------------*/
 /* footer */
 /*---------------------------------------------*/

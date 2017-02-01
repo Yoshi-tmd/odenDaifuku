@@ -28,6 +28,66 @@
 
 		<main>
 			<article>
+				<h2>CSS小技メモ</h2>
+				<time datetime="2017-02-01">2017.02.01</time>
+				<p>CSSのテクニックメモ<br />
+				参考：<a href="http://www.webcreatorbox.com/tech/css-tips-2/
+" target="_blank">【第２弾】少しのコードで実装可能な20のCSS小技集</a><br /></p>
+				<dl class="css3Property">
+					<dt>画像を丸く表示</dt>
+					<dd>画像をborder-radiusを使って丸く表示する。</dd>
+					<dd>縦横比が１：１のものに<span class="cssFont">border-radius: 100%;</span>をつける。</dd>
+					<dd>左の画像にもかかってる。</dd>
+				</dl>
+				<dl class="css3Property">
+					<dt>文字と枠線を同じ色にする</dt>
+					<dd>文字色とborderの色を同じにする小技。</dd>
+					<dd class="colorSame">Color is #F68686</dd>
+					<dd>要素に<span class="cssFont">color: #F68686;</span>をつけるだけで先にも色IDが継承される。</dd>
+					<dd>親要素にcolor:;で色を指定しても子要素に継承される。</dd>
+				</dl>
+				<dl class="css3Property">
+					<dt>画像にフィルターをかける</dt>
+					<dd>画像にfilterプロパティを使うことで、画像の色彩を調整できる。</dd>
+					<dd>＊IEは非対応</dd>	
+					<dd class="clearHack">
+						<div class="cssImg"><p>none<br /><img src="./image/151218_whitebear.jpeg" alt=""></p></div>
+						<div class="cssImg"><p>sepia(60%)<br /><img src="./image/151218_whitebear.jpeg" alt="" class="sepia"></p></div>
+						<div class="cssImg"><p>grayscale(100%)<br /><img src="./image/151218_whitebear.jpeg" alt="" class="gray"></p></div>
+						<div class="cssImg"><p>blur(2px)<br /><img src="./image/151218_whitebear.jpeg" alt="" class="blur"></p></div>
+						<div class="cssImg"><p>brightness(1.5)<br /><img src="./image/151218_whitebear.jpeg" alt="" class="brightness"></p></div>
+						<div class="cssImg"><p>hue-rotate(90deg)<br /><img src="./image/151218_whitebear.jpeg" alt="" class="hue"></p></div>
+					</dd>
+					<dd>filterの他の効果は<a href="https://developer.mozilla.org/ja/docs/Web/CSS/filter" target="_blank">ここから</a></dd>
+				</dl>
+				<dl class="css3Property">
+					<dt>リストマーカーの色を変更する</dt>
+					<dd>:before疑似要素を使って、色の付いたマーカーを作る。</dd>
+					<dd>上記の「画像を丸くする方法」とほぼ同じ。</dd>	
+					<dd><span class="cssFont">top: -3px;</span>、<span class="cssFont">left:-6px;</span>を使って位置を調節する。</dd>	
+					<dd>例</dd>
+					<dd>［３大栄養素］</dd>
+					<dd>
+						<ul class="colorList">
+							<li>炭水化物</li>
+							<li>タンパク質</li>
+							<li>脂肪</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="css3Property">
+					<dt>フォーカスすると伸びるテキストボックス</dt>
+					<dd>テキストボックスをクリックする（フォーカス状態）と、幅が伸びていく。</dd>
+					<dd>:focus疑似要素を使って<span class="cssFont">width</span>を指定する。</dd>	
+					<dd>例（テキストボックスをクリックしてみよう）</dd>
+					<dd>通常のテキストボックス</dd>
+					<input type="text" />
+					<dd>フォーカスで伸びるテキストボックス</dd>
+					<input type="text" class="expand-box" />
+				</dl>
+			</article><!-- article -->
+			
+			<article>
 				<h2>BASICプログラムを勉強しよう</h2>
 				<time datetime="2017-01-19">2017.01.19</time>
 				<p>自由にIchigoJamを使えるようになりたい。<br />
