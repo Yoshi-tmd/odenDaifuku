@@ -28,6 +28,21 @@
 
 		<main>
 			<article>
+				<h2>生まれて30年</h2>
+				<time datetime="2017-06-19">2017.06.19</time>
+				<dl class="">
+					<dt>孔子の名言「三十歳　而立」</dt>
+					<dd>「立つ」は「独立」する、という意味。<br />
+						自身の学問の基礎が充実したものになり、自分なりの考えをまとめることができる、ということ。<br />
+						「他人から学ぶこと（インプット）を充実させ、独立した自説を持てるようにしなさい」ということ。</dd>
+					<dd>自分ができることを洗い出し、見つめ直す。<br />
+						「アウトプット」できることを組み合わせ、作品にする。<br />
+						評価してもらう。
+					</dd>
+				</dl>
+			</article><!-- article -->
+
+			<article>
 				<h2>CSS小技メモ</h2>
 				<time datetime="2017-02-01">2017.02.01</time>
 				<p>CSSのテクニックメモ<br />
@@ -49,7 +64,7 @@
 				<dl class="css3Property">
 					<dt>画像にフィルターをかける</dt>
 					<dd>画像にfilterプロパティを使うことで、画像の色彩を調整できる。</dd>
-					<dd>＊IEは非対応</dd>	
+					<dd>＊IEは非対応</dd>
 					<dd class="clearHack">
 						<div class="cssImg"><p>none<br /><img src="./image/151218_whitebear.jpeg" alt=""></p></div>
 						<div class="cssImg"><p>sepia(60%)<br /><img src="./image/151218_whitebear.jpeg" alt="" class="sepia"></p></div>
@@ -63,8 +78,8 @@
 				<dl class="css3Property">
 					<dt>リストマーカーの色を変更する</dt>
 					<dd>:before疑似要素を使って、色の付いたマーカーを作る。</dd>
-					<dd>上記の「画像を丸くする方法」とほぼ同じ。</dd>	
-					<dd><span class="cssFont">top: -3px;</span>、<span class="cssFont">left:-6px;</span>を使って位置を調節する。</dd>	
+					<dd>上記の「画像を丸くする方法」とほぼ同じ。</dd>
+					<dd><span class="cssFont">top: -3px;</span>、<span class="cssFont">left:-6px;</span>を使って位置を調節する。</dd>
 					<dd>例</dd>
 					<dd>［３大栄養素］</dd>
 					<dd>
@@ -78,7 +93,7 @@
 				<dl class="css3Property">
 					<dt>フォーカスすると伸びるテキストボックス</dt>
 					<dd>テキストボックスをクリックする（フォーカス状態）と、幅が伸びていく。</dd>
-					<dd>:focus疑似要素を使って<span class="cssFont">width</span>を指定する。</dd>	
+					<dd>:focus疑似要素を使って<span class="cssFont">width</span>を指定する。</dd>
 					<dd>例（テキストボックスをクリックしてみよう）</dd>
 					<dd>通常のテキストボックス</dd>
 					<input type="text" />
@@ -86,7 +101,7 @@
 					<input type="text" class="expand-box" />
 				</dl>
 			</article><!-- article -->
-			
+
 			<article>
 				<h2>BASICプログラムを勉強しよう</h2>
 				<time datetime="2017-01-19">2017.01.19</time>
@@ -107,7 +122,7 @@
 					140 E=X-(K=28)+(K=29)<br />
 					150 F=Y-(K=30)+(K=31)<br />
 					160 D=SCR(E,F)-48<br />
-					170 IF D<0 OR (D+C)>10 THEN GOTO 100<br />	
+					170 IF D<0 OR (D+C)>10 THEN GOTO 100<br />
 					180 IF (D+C)=10 THEN C=0:D=0:LOCATE E,F:PRINT " ";<br />
 					190 C=C+D<br />
 					200 LOCATE X,Y:PRINT " ";<br />
