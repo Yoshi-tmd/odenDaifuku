@@ -32,9 +32,9 @@ header{
 }
 
 h1 {
-    padding:0.5em 0;
+    padding:0.6em 0;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #fff;
     font-family: 'Meiryo';
 }
@@ -117,10 +117,11 @@ main article p{
 main article dl{
 	margin:8px 0;
 }
-main article dt{
+main article dl dt{
 	margin:4px 0;
+    color:#127568;
 }
-main article dd{
+main article dl dd{
 	line-height: 1.2em;
 }
 main article ul.listLike li{
@@ -151,7 +152,7 @@ main article .css3Property dd{
 	text-indent: 1em;
 }
 main article .colorList{
-	margin-left:1em;	
+	margin-left:1em;
 }
 main article .colorList li:before{
 	content: "";
@@ -214,7 +215,7 @@ main article .colorSame{
 }
 
 /*---------- class="program" ----------*/
-main article dd.program {
+main article dd.program{
 	font-family: 'Lucida Console';
 	font-size:0.8em;
 	margin:0.8em 0 0.8em 1em;
